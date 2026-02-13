@@ -34,7 +34,7 @@ const EventEntry = () => {
           <img src="/favicon.png" alt="InPulse logo" className="h-16 w-16 object-contain" />
         </div>
         <h1 className="font-display text-4xl font-bold tracking-tight neon-text">
-          InPulse
+          InPulse Connect
         </h1>
         <p className="text-sm text-muted-foreground">Gamify your networking</p>
       </div>
