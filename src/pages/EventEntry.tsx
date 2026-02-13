@@ -30,8 +30,8 @@ const EventEntry = () => {
     <div className="flex min-h-screen flex-col items-center justify-center px-6">
       {/* Logo */}
       <div className="mb-10 flex flex-col items-center gap-3 animate-slide-up">
-        <div className="flex h-20 w-20 items-center justify-center rounded-2xl neon-glow overflow-hidden">
-          <img alt="InPulse logo" className="h-[130%] w-[130%] object-cover" src="/lovable-uploads/5a520db4-2f6e-466e-8e69-3c75421baa52.png" />
+        <div className="flex h-16 w-16 items-center justify-center rounded-2xl neon-glow overflow-hidden">
+          <img src="/favicon.png" alt="InPulse logo" className="h-16 w-16 object-contain" />
         </div>
         <h1 className="font-display text-4xl font-bold tracking-tight neon-text">
           InPulse
@@ -49,8 +49,8 @@ const EventEntry = () => {
             value={lumaUrl}
             onChange={(e) => setLumaUrl(e.target.value)}
             placeholder="https://lu.ma/your-event"
-            className="h-12 rounded-xl border-border/50 bg-card/70 text-foreground placeholder:text-muted-foreground/50 focus-visible:ring-primary" />
-
+            className="h-12 rounded-xl border-border/50 bg-card/70 text-foreground placeholder:text-muted-foreground/50 focus-visible:ring-primary"
+          />
         </div>
         <div className="space-y-2">
           <label className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
@@ -60,26 +60,26 @@ const EventEntry = () => {
             value={handle}
             onChange={(e) => setHandle(e.target.value)}
             placeholder="@yourname"
-            className="h-12 rounded-xl border-border/50 bg-card/70 text-foreground placeholder:text-muted-foreground/50 focus-visible:ring-primary" />
-
+            className="h-12 rounded-xl border-border/50 bg-card/70 text-foreground placeholder:text-muted-foreground/50 focus-visible:ring-primary"
+          />
         </div>
 
         <Button
           type="submit"
           disabled={loading || !lumaUrl.trim() || !handle.trim()}
-          className="h-12 w-full rounded-xl text-base font-semibold neon-glow transition-all duration-300 hover:scale-[1.02]">
-
-          {loading ?
-          <span className="animate-pulse-neon">Connecting...</span> :
-
-          <>
+          className="h-12 w-full rounded-xl text-base font-semibold neon-glow transition-all duration-300 hover:scale-[1.02]"
+        >
+          {loading ? (
+            <span className="animate-pulse-neon">Connecting...</span>
+          ) : (
+            <>
               Enter Event
             </>
-          }
+          )}
         </Button>
       </form>
-    </div>);
-
+    </div>
+  );
 };
 
 export default EventEntry;
