@@ -46,11 +46,14 @@ export async function fetchEvent(_lumaUrl: string): Promise<EventData> {
   };
 }
 
-// Hardcoded quests
+// Contextual quests reflecting real attendee patterns
 export const QUESTS: Quest[] = [
-  { id: "q1", mission: "Find someone building with AI agents", targetName: "AI Explorer" },
-  { id: "q2", mission: "Connect with a first-time attendee", targetName: "New Face" },
-  { id: "q3", mission: "Meet someone from a different city", targetName: "Traveler" },
+  { id: "q1", mission: "Connect with someone who shared their Instagram.", targetName: "Social Star" },
+  { id: "q2", mission: "Meet an attendee with no social links and learn what they're building.", targetName: "Stealth Builder" },
+  { id: "q3", mission: "Talk to a founder or builder in the room.", targetName: "Founder" },
+  { id: "q4", mission: "Find someone completely new to you at this event.", targetName: "New Face" },
+  { id: "q5", mission: "Exchange QR codes with a first-time connection.", targetName: "First Link" },
+  { id: "q6", mission: "Introduce two people who haven't met each other yet.", targetName: "Connector" },
 ];
 
 // Seed leaderboard attendees
