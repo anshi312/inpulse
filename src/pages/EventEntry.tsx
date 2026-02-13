@@ -30,8 +30,8 @@ const EventEntry = () => {
     <div className="flex min-h-screen flex-col items-center justify-center px-6">
       {/* Logo */}
       <div className="mb-10 flex flex-col items-center gap-3 animate-slide-up">
-        <div className="flex h-16 w-16 items-center justify-center rounded-2xl neon-glow overflow-hidden">
-          <img alt="InPulse logo" className="h-16 w-16 object-fill border" src="/lovable-uploads/5a520db4-2f6e-466e-8e69-3c75421baa52.png" />
+        <div className="flex h-20 w-20 items-center justify-center rounded-2xl neon-glow overflow-hidden">
+          <img alt="InPulse logo" className="h-[130%] w-[130%] object-cover" src="/lovable-uploads/5a520db4-2f6e-466e-8e69-3c75421baa52.png" />
         </div>
         <h1 className="font-display text-4xl font-bold tracking-tight neon-text">
           InPulse
