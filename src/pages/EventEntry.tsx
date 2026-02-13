@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { Zap } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { useApp } from "@/context/AppContext";
@@ -31,8 +30,8 @@ const EventEntry = () => {
     <div className="flex min-h-screen flex-col items-center justify-center px-6">
       {/* Logo */}
       <div className="mb-10 flex flex-col items-center gap-3 animate-slide-up">
-        <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-primary/20 neon-glow">
-          <Zap className="h-8 w-8 text-primary" />
+        <div className="flex h-16 w-16 items-center justify-center rounded-2xl neon-glow overflow-hidden">
+          <img src="/favicon.png" alt="InPulse logo" className="h-16 w-16 object-contain" />
         </div>
         <h1 className="font-display text-4xl font-bold tracking-tight neon-text">
           InPulse
@@ -74,7 +73,6 @@ const EventEntry = () => {
             <span className="animate-pulse-neon">Connecting...</span>
           ) : (
             <>
-              <Zap className="mr-2 h-4 w-4" />
               Enter Event
             </>
           )}
