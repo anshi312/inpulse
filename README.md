@@ -1,73 +1,109 @@
-# Welcome to your Lovable project
+# InPulse — Event Networking Quest App
 
-## Project info
+InPulse is a **mobile-first, dark-mode web app** that gamifies real-world networking at events.  
+Inspired by Snapchat-style UI and social discovery mechanics, InPulse turns meeting new people into a **fun, quest-driven experience** with QR-verified connections and live leaderboards.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+**Live demo:**  
+https://inpulse.lovable.app/dashboard
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+# ✨ Core Idea
 
-**Use Lovable**
+Networking at events is often awkward and unstructured.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+InPulse introduces:
 
-Changes made via Lovable will be committed automatically to this repo.
+- 🎯 **Social quests** that guide meaningful conversations  
+- 📱 **QR-based connection exchange** for instant verification  
+- 🏆 **Live leaderboards** that reward engagement  
+- 🌙 **Dark, playful mobile UI** designed for real event use  
 
-**Use your preferred IDE**
+The current demo runs on a **mock backend for reliability**, while the architecture is designed to scale to **Supabase + real event integrations**.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+# 🚀 Features
 
-Follow these steps:
+## Event Entry
+- Enter a Luma event URL and your handle  
+- Mock edge API fetches event metadata  
+- Seamless navigation into the event experience  
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## Quest Dashboard
+- Three networking missions per event  
+- Tap-to-verify completion flow  
+- Animated progress tracking  
+- Mobile bottom navigation  
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## Double QR Exchange
+- Personal QR generated from handle + event  
+- Simulated scan to create mutual connection  
+- Neon success animation and live connection count  
 
-# Step 3: Install the necessary dependencies.
-npm i
+## Leaderboard
+- Ranked attendees by verified connections  
+- Highlighted current user  
+- Pull-to-refresh interaction  
+- Fully responsive mobile layout  
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+---
 
-**Edit a file directly in GitHub**
+# 🧱 Architecture
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Demo Mode (Current)
+To ensure **live demo reliability**, the app uses:
 
-**Use GitHub Codespaces**
+- Mock edge API route for event data  
+- Local in-memory state for:
+  - attendees  
+  - connections  
+  - quest completions  
+- No external network dependency  
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+This guarantees:
 
-## What technologies are used for this project?
+- ⚡ instant loading  
+- 🛡️ zero API failures  
+- 🎤 smooth presentations  
+
+## Production-Ready Path
+The system is structured to evolve into:
+
+- **Supabase Postgres** for persistence  
+- **Edge functions** for real Luma API integration  
+- **Realtime leaderboard queries**  
+- Optional **AI-powered networking recommendations**  
+
+---
+
+# 🛠 Tech Stack
 
 This project is built with:
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- Vite  
+- TypeScript  
+- React  
+- shadcn-ui  
+- Tailwind CSS  
 
-## How can I deploy this project?
+Generated and managed with **Lovable**.
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+---
 
-## Can I connect a custom domain to my Lovable project?
+# 🧪 Local Development
 
-Yes, you can!
+Clone and run locally:
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+```sh
+# Step 1: Clone the repository
+git clone <YOUR_GIT_URL>
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+# Step 2: Enter the project folder
+cd <YOUR_PROJECT_NAME>
+
+# Step 3: Install dependencies
+npm install
+
+# Step 4: Start dev server
+npm run dev
