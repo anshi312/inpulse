@@ -4,7 +4,7 @@ InPulse is a **mobile-first, dark-mode web app** that gamifies real-world networ
 Inspired by Snapchat-style UI and social discovery mechanics, InPulse turns meeting new people into a **fun, quest-driven experience** with QR-verified connections and live leaderboards.
 
 **Live demo:**  
-https://inpulse.lovable.app/dashboard
+https://inpulse.lovable.app
 
 ---
 
